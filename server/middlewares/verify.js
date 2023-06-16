@@ -3,7 +3,6 @@ dotenv.config();
 
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import morgan from "morgan";
 import { userModel } from "../models/user.models.js";
 import { handleErrors } from "../database/errors.js";
 

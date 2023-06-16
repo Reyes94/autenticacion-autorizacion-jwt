@@ -16,7 +16,6 @@ const login = async (email) => {
     try {
         const text = "SELECT * FROM usuarios WHERE email = $1";
         const result = await pool.query(text, [email]);
-        // console.log(result)
         return result;
     } catch (error) {
         console.log(error)
